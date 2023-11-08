@@ -1,0 +1,63 @@
+.obrathuj-zvonok {
+	width: 100%;
+	max-width: 350px;
+}
+.form-zvonok {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.form-zvonok div {
+	padding: 15px 0;
+}
+.bot-send-mail {
+	box-sizing: border-box;
+	width: 100%;
+}
+.form-zvonok label, .form-zvonok input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form-zvonok label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-zvonok input {
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.form-zvonok label span {
+	color: red;
+}
+.form-zvonok .bot-send-mail {
+	padding: 15px;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	background-color: #009b97;
+	cursor: pointer;
+	border: 3px #009b97 solid;
+	border-radius: 5px;
+}
+.form-zvonok .bot-send-mail:hover {
+	color: #009b97;
+	background-color: #fff;
+}
+.contentfeed {
+	font-size: 20px;
+	text-align: center;
+	height: 500px;
+	margin: 3px 0;
+	border: 1px solid black;
+	background-image: url(picture/content.png);
+	background-repeat: repeat;
+	overflow: hidden;
+}

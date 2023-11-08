@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Lab 8</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body onload="Randomcolors()">
+		<div class="main">
+		<p>
+			Количество цветов слайдера
+			<select id="menu" onchange="Randomcolors();">
+				<option value="0">1</option>
+				<option value="1">2</option>
+				<option value="2">3</option>
+				<option value="3">4</option>
+				<option  selected value="4">5</option>
+			</select>
+		</p>
+		<p>
+			Время смены цвета, мс
+			<input type="text" id="time" value="1000">
+		</p>
+		<p id="colors"></p>
+		<div class="slider">
+			<div class="first"></div>
+			<div class="second"></div>
+		</div>
+		<br>
+		<input type="button" id="Start" value="start" onclick="button();">
+		<input type="button" id="Stop" value="Stop" onclick="button();" hidden>
+	</div>
+	</body>
+</html>

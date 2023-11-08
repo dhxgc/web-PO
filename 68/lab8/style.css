@@ -1,0 +1,33 @@
+div {
+	overflow: hidden;
+	width: 400px;
+	height: 200px;
+	
+}
+
+.slider {
+	border: solid 4px black;
+}
+
+.main {
+	width: 410px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+
+}
+
+.first {
+	position: relative;
+	left: -400px;
+	width: 400px;
+	height: 200px;
+}
+
+.second {
+	position: relative;
+	left: 0px; top: -200px;
+	width: 400px;
+	height: 200px;
+}

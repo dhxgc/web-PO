@@ -1,0 +1,277 @@
+/* td{
+    border: 1px solid black;
+} */
+
+#logo {
+    height: 100px;
+    background-repeat:repeat;
+    overflow: hidden;
+}
+
+.topbar{
+    height: 100px;
+    background-image: url(./picture/shapka.jpg);
+    background-repeat:repeat;
+    overflow: hidden;
+}
+
+.tabintel {
+
+	border: black solid 3px;
+	height: auto;
+	width: 800px;
+	min-width: 650px;
+	float: left;
+	margin-left: 5px;
+	border-collapse: collapse;
+	background-color: #97f0af;
+	
+}
+
+.tabamd {
+	border: black solid 3px;
+	height: auto;
+	width: 800px;
+	min-width: 650px;
+	float: right;
+	margin-right: 5px;
+	border-collapse: collapse;
+	background-color: #97f0af;
+	
+}
+
+.sidebar {
+    color: black;
+}
+
+.ewe{
+    padding-left: 400px;
+}
+
+.sidebarr{
+    background: green;
+
+}
+table
+{
+    border-collapse: collapse; /* эквивалент 'cellspacing' */
+}
+table td, table th
+{
+    padding: 0; /* эквивалент 'cellpadding' */
+}
+.characters{
+    text-align: left;
+    width: 30%;
+    font-size: 25px;
+    padding-left: 25px;
+
+}
+.characters-h{
+    text-align: left;
+    width: 30%;
+    font-size: 25px;
+
+}
+
+.ot{
+    height: 30px;
+}
+
+.ot-del{
+    height: 50px;
+}
+
+.header{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+
+    font-size: 18px;
+}
+
+.menu-l{
+    background-color: teal;
+    text-align: center;
+    font-size: larger;
+}
+.goods{
+    width: 100%;
+    margin-left: 400px;
+}
+.footer{
+    position: relative;
+    padding-top: 100px;
+    height: 50px;
+    background-color: teal;
+    width: 100%;
+}
+.logo{
+    width: 116px;
+    height: 40px;
+    float: left;
+}
+body{
+    background-image: url(./picture/content.png);
+}
+.menu1 a{
+    font-size: larger;
+    padding-left: 25px;
+}
+*{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif; 
+    font-style: normal; 
+    font-variant: normal;
+}
+.footCopy{
+    margin-bottom: 26px;
+    text-align: left;
+    width: 500px;
+    background:teal;
+}
+.contact{
+    float:right;
+    width:210px;
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 5px;
+    color:aliceblue;
+}
+.text{
+    text-align: left;
+}
+.otstup{
+    width:20%;
+}
+.ot-foot{
+    height: 550px;
+}
+.ott-foot{
+    height: 200px;
+}
+.good{
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 30px;
+
+}
+.good_head{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.up{
+    margin-left: 50px;
+}
+.vvvl{
+
+    padding-left: 70%;
+    text-align: left;
+    font-size:27px;
+    padding-bottom: 5px;
+}
+
+.tab {
+	color: white;
+    border-collapse: collapse;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+	font-size : 25px;
+	width : 950px;
+	min-width: 900px;
+	height : auto;
+	margin-top : 20px;
+	background-color: #009b76;
+	border : black solid 2px;
+}
+.vvl{
+    padding-top: 30px;
+    padding-left: 15px;
+    text-align: left;
+    font-size:27px;
+    padding-bottom: 5px;
+}
+
+.contact-about{
+    width:210px;
+    position:absolute;
+    left:45%;
+    bottom: 10px;
+}
+.menuabout{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 18px;
+    width: 100%;
+    position: fixed;
+
+    z-index: 1;
+    margin-top:-2px;
+}
+
+
+.feed{
+    width: 50%;
+    padding-left: 50px;
+
+    border-radius: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.feed p{
+    padding-top: 10px;
+    font-size: large;
+    text-align: left;
+    font-size: larger;
+}
+
+li{
+    
+    
+    text-align: center;
+    vertical-align: top;
+    width: 200px;
+    padding-bottom: 25px;
+    list-style-type: none;
+}
+
+.vvll{
+    width: 1000px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.bfg{
+    text-align: left;
+}
+.dott{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    line-height: 1.29;
+}
+.imgSAMS{
+    width: 150px;
+}
+.tovarr{
+    margin-right: 80px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
