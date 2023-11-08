@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<style>
+#k
+{
+border-color:black;
+}
+#mn
+{
+border-color:black;
+}
+</style>
+<meta charset="utf-8">
+<title>Calcylator</title>
+<script>
+function Zap () {
+var tt=0;
+var j,h;
+var a = document.getElementById("k").value;
+var b= document.getElementById("mn").value;
+var c= document.getElementById("select").value;
+var s;
+if (isNaN(a) && (b)) {
+s="Вели букву, в оба поля, повторите попытку"; 
+document.getElementById("lk").value=s; 
+document.getElementById("k").style.borderColor='#CD5C5C'; 
+document.getElementById("lk").value=s; 
+document.getElementById("mn").style.borderColor='#CD5C5C';
+}
+    else{
+if (isNaN(a)) {
+s="Вели букву, повторите попытку"; 
+document.getElementById("lk").value=s; 
+document.getElementById("k").style.borderColor='#CD5C5C'; }
+else{if(a=="" && b==""){s="Не ввели оба числа";
+ document.getElementById("lk").value=s; 
+document.getElementById("k").style.borderColor='#CD5C5C';
+ document.getElementById("lk").value=s; 
+document.getElementById("mn").style.borderColor='#CD5C5C';}
+else{
+if(a==""){s="Не ввели первое число";
+ document.getElementById("lk").value=s; 
+document.getElementById("k").style.borderColor='#CD5C5C';
+}else{
+j=parseFloat(a,10);
+tt++;
+ document.getElementById("k").style.borderColor='black';}
+if (isNaN(b)) {
+s="Вели букву, повторите попытку"; 
+
+document.getElementById("lk").value=s;
+document.getElementById("mn").style.borderColor='#CD5C5C';}
+else {if(b==""){s="Не ввели второе число";
+ document.getElementById("lk").value=s; 
+document.getElementById("mn").style.borderColor='#CD5C5C';
+}else{h=parseFloat(b,10);
+tt++; document.getElementById("mn").style.borderColor='black';
+}
+if (tt==2){
+switch(c)
+{
+case '1': s=j+h; break;
+case '2': s=j-h; break;
+case '3': s=j*h; break;
+case '4': if(h==0) {
+s="Ошибка при делении на ноль"; 
+} else {
+s=j/h; 
+} break;
+}
+document.getElementById("mn").style.borderColor='black';
+document.getElementById("lk").value=s;
+}
+}
+}
+}
+}
+}
+</script>
+</head>
+<body>
+<br>
+<div>
+<form method="post">
+<input id="k" name="number1" type="text" placeholder="Число 1" >
+<select id="select">
+<option value="1">+</option>
+<option value="2">-</option>
+<option value="3">*</option>
+<option value="4">/</option>
+</select>
+<input id="mn" name="number2" type="text" placeholder="Число 2" >
+<button onclick="Zap();" type="button">=</button>
+<input id="lk" class="txt" name="itog" type="text" placeholder="Итог" 
+readonly>
+</form>
+</div>
+</body>
+</html>

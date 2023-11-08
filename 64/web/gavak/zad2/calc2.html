@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="ru">
+
+<head>
+<meta charset="utf-8"> 
+<title>Большой калькулятор</title>
+<style>
+#screen{
+height:40px;
+border:1px solid black;
+text-align:left;
+font-size: 20pt;
+border-radius: 15px;
+background-color: white;
+}
+.knopka{
+border-radius: 50%;
+background-color: white;
+width:40px;
+height:40px;
+text-align:center;
+border:1px solid black;
+}
+table{
+height: 35%;
+width: 250px;
+background-color: #C0C0C0;
+padding: 10px;
+border: 1px solid black;
+border-radius: 15px;
+}
+</style>
+</head>
+<body>
+<script>
+
+document.addEventListener('keydown',keyboard);
+
+function keyboard() {
+    keyVar = event.key;
+    if (keyVar >= 0 && keyVar <= 9) number(keyVar);
+    if (keyVar == ".") tochka();
+    if (keyVar == "/") operation("/");
+    if (keyVar == "*") operation("*");
+    if (keyVar == "+") operation("+");
+    if (keyVar == "-") operation("-");
+    if (keyVar == "=" || keyVar == "Enter") ravno();
+    if (keyVar == "Escape") Clear();
+}
+
+function Clear() {
+	document.getElementById("screen").innerHTML = "0";
+	document.getElementById("plus").style = "background-color:white";
+	document.getElementById("minus").style = "background-color:white";
+	document.getElementById("proizved").style = "background-color:white";
+	document.getElementById("delenie").style = "background-color:white";
+}
+
+function tochka() {
+	if(document.getElementById("screen").innerHTML.indexOf(".")==-1) {
+		document.getElementById("screen").innerHTML += ".";
+	}
+}
+var res = false;
+function number(num) {
+	var temp1 = parseFloat(document.getElementById("screen").innerHTML);
+	temp1 = parseFloat(temp1).toFixed();
+	if(document.getElementById("screen").innerHTML == 0 && document.getElementById("screen").innerHTML != "0." || res == true) {
+		document.getElementById("screen").innerHTML = "";
+		res = false;
+	}
+	if(temp1.length <= 15) {
+		document.getElementById("screen").innerHTML += num;
+	}
+}
+var temp = parseFloat(0);
+
+function operation(oper) {
+	switch (oper) {
+		case "+": 
+			document.getElementById("plus").style = "background-color:gray";
+			document.getElementById("minus").style = "background-color:white";
+			document.getElementById("proizved").style = "background-color:white";
+			document.getElementById("delenie").style = "background-color:white";
+			break;
+		case "-": 
+			document.getElementById("plus").style = "background-color:white";
+			document.getElementById("minus").style = "background-color:gray";
+			document.getElementById("proizved").style = "background-color:white";
+			document.getElementById("delenie").style = "background-color:white";
+			break;
+		case "*": 
+			document.getElementById("plus").style = "background-color:white";
+			document.getElementById("minus").style = "background-color:white";
+			document.getElementById("proizved").style = "background-color:gray";
+			document.getElementById("delenie").style = "background-color:white";
+			break;
+		case "/": 
+			document.getElementById("plus").style = "background-color:white";
+			document.getElementById("minus").style = "background-color:white";
+			document.getElementById("proizved").style = "background-color:white";
+			document.getElementById("delenie").style = "background-color:gray";
+			break;
+	}
+	temp = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = 0;
+}
+function ravno() {
+	var result = 0;
+	err = 0;
+	if(document.getElementById("plus").style.backgroundColor == 'gray') {
+		result = parseFloat(temp) + parseFloat(document.getElementById("screen").innerHTML);
+		res = true;
+	}
+	if(document.getElementById("minus").style.backgroundColor == 'gray') {
+		result = parseFloat(temp) - parseFloat(document.getElementById("screen").innerHTML);
+		res = true;
+	}
+	if(document.getElementById("proizved").style.backgroundColor == 'gray') {
+		result = parseFloat(temp) * parseFloat(document.getElementById("screen").innerHTML);
+		res = true;
+	}
+	if(document.getElementById("delenie").style.backgroundColor == 'gray') {
+		if(document.getElementById("screen").innerHTML == 0) {
+			err = 1;
+		}
+		else result = parseFloat(temp) / parseFloat(document.getElementById("screen").innerHTML);
+		res = true;
+	}
+	var tempp = result.toFixed();
+	if(tempp.length <=15 && err==0) {
+		document.getElementById("screen").innerHTML = result;
+	}		
+	else if(err==1){
+		document.getElementById("screen").innerHTML = "ERROR";
+	}
+	else {
+		document.getElementById("screen").innerHTML = "OVERFLOW";
+	}
+	document.getElementById("plus").style = "background-color:white";
+	document.getElementById("minus").style = "background-color:white";
+	document.getElementById("proizved").style = "background-color:white";
+	document.getElementById("delenie").style = "background-color:white";
+}
+</script>
+<table>
+	<tr>
+		<td colspan = '4' id='screen'>
+		</td>
+	</tr>
+	<tr><td></td><td></td><td></td><td  class='knopka' onclick='Clear()'>C</td></tr><tr><td class='knopka' onclick='number(1)'>1</td><td class='knopka' onclick='number(2)'>2</td><td class='knopka' onclick='number(3)'>3</td><td class='knopka' id = 'plus' onclick='operation(`+`)'>+</td></tr><tr><td class='knopka' onclick='number(4)'>4</td><td class='knopka' onclick='number(5)'>5</td><td class='knopka' onclick='number(6)'>6</td><td class='knopka' id = 'minus' onclick='operation(`-`)'>-</td></tr><tr><td class='knopka' onclick='number(7)'>7</td><td class='knopka' onclick='number(8)'>8</td><td class='knopka' onclick='number(9)'>9</td><td class='knopka' id = 'proizved' onclick='operation(`*`)'>*</td></tr><tr><td class='knopka' onclick='number(0)'>0</td><td class='knopka' onclick='tochka()'>.</td><td class='knopka' onclick='ravno()'>=</td><td class='knopka' id = 'delenie' onclick='operation(`/`)'>/</td></tr></table>
+
+</body>
+</html>

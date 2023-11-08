@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+
+<html lang="ru">
+
+ 
+
+<head>
+
+​<meta charset="utf-8"> 
+
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <title>Снегопад</title>
+
+ <style>
+
+    body{background-color:#00CED1;
+
+        }
+
+    .gg{text-align:center;
+
+        font-size:50px;
+
+        position:relative;
+
+        color:#FFFFFf}
+
+</style>​
+
+ </head>
+
+ <body>
+
+   <div>
+
+    <script type="text/javascript">
+
+
+
+ 
+
+var snowmax=10;
+
+ 
+
+var sinkspeed=0.1; 
+
+var snowmaxsize=150;
+
+var snowminsize=25;
+
+ 
+
+var snow=new Array();
+
+var marginbottom;
+
+var marginright;
+
+var timer;
+
+ 
+
+function initsnow() {
+
+       marginbottom=document.documentElement.clientHeight;
+
+       marginright=document.documentElement.clientWidth;
+
+ 
+
+   for (i=0;i<=snowmax;i++) {
+
+       snow[i]=document.getElementById("s"+i);
+
+       
+
+       snow[i].size=Math.random()*(snowmaxsize-snowminsize+1)+snowminsize;
+
+       snow[i].style.width=snow[i].size+"px";
+
+       
+
+       snow[i].speed=sinkspeed*snow[i].size/10;
+
+       
+
+       snow[i].posx=Math.random()*(marginright-snow[i].size);
+
+       snow[i].posy=Math.random()*(2*marginbottom-marginbottom-2*snow[i].size);
+
+       snow[i].style.top=snow[i].posy+"px";
+
+       snow[i].style.left=snow[i].posx+"px";
+
+   }
+
+   movesnow();
+
+}
+
+function movesnow() {
+
+   for(i=0;i<=snowmax;i++) {
+
+      
+
+       snow[i].posy+=snow[i].speed;
+
+       snow[i].style.top=snow[i].posy+"px";
+
+       
+
+       if (snow[i].posy>=marginbottom-snow[i].size) {
+
+           snow[i].posy=0;
+
+       }
+
+   }
+
+   var timer=setTimeout("movesnow()",25);
+
+}
+
+for (i=0;i<=snowmax;i++) {
+
+   document.write("<img src='p.png' id='s"+i+"' style='position:absolute;width:"+snowmaxsize+"px;'></img>");
+
+}
+
+function start2(){
+
+   window.onload=initsnow;
+
+}
+
+</script>
+
+<div class="gg">13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111
+ 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111 13111</div>
+
+</div>
+
+<script>start2();</script>
+
+ </body>
+
+</html>
