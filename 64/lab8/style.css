@@ -1,0 +1,30 @@
+body {
+	background-color: #FFFFFF;
+}
+
+#window {
+	width: 600px;
+	margin: auto;
+	position: relative;
+	color: #000000;
+}
+
+#colors_block {
+	height: 180px;
+	width: 600px;
+	background: #FFFFFF;
+	margin-bottom:35px;
+	overflow: hidden;
+}
+
+#colors_rectangle {
+	height: 180px;
+	width: 550px;
+	position: relative;
+}
+
+#buttons {
+	margin-left: 45%;
+	height: 25px;
+	width: 60px;
+}

@@ -1,0 +1,18 @@
+.main{
+		background: url("/lab4/zad3/pictures/background.png");
+	}
+tr ,h1{
+	text-align: center;
+}
+table{
+	margin: auto
+}
+.flaggerb{
+	font-weight: bold;
+}
+.city{
+	background-image: url("/lab4/zad3/pictures/2.jpg");
+	color: black;
+}
+
+

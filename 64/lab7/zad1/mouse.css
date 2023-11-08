@@ -1,0 +1,50 @@
+body {
+	background-color: #FF0000;
+}
+
+#mouse {
+	position:absolute;
+	width: 170px;
+	border-spacing:0;
+}
+
+#left {
+	border: 2mm double;
+	width: 60px;
+	border-top-left-radius: 20px;
+    height:40px;
+	text-align:center;
+	background-color: white;
+}
+
+#center {
+	border: 2mm double;
+	width: 60px;
+	text-align:center;
+	background-color: white;
+}
+
+#right {
+	border: 2mm double;
+	width: 60px;
+	border-top-right-radius: 20px;
+	text-align:center;
+	background-color: white;
+}
+
+.edge {
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	background-color: white;
+}
+
+#back {
+	border-bottom: 2mm double;
+	border-left: 2mm double;
+	border-right: 2mm double;
+	border-bottom-left-radius: 90px;
+	border-bottom-right-radius: 90px;
+	height: 200px;
+	background-color: white;
+}
+

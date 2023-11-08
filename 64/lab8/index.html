@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Лабораторная работа 8</title>
+</head>
+<body>
+	<div id="window">
+		<p>Количество цветов слайдера
+		<select id="form1" onchange="getValue(this.value);" oninput="realtime_changing();">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		</p>
+		<p>
+			Время смены цвета, мс
+			<input id="form2" type="text" value="1000" oninput="check(event)">
+		</p>
+		<p id="current_colors"></p>
+		<div id="colors_block">
+			<div id="colors_rectangle">
+			</div>
+		</div>
+		<input id="buttons" type="button" value="start" onclick="start(event);">
+	</div>
+	<script src="./sript.js"></script>
+</body>
+</html>

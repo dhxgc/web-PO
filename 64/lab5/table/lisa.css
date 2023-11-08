@@ -1,0 +1,289 @@
+table{
+	border-spacing: 0;
+}
+
+body {
+	font-family: IMPACT;
+	background-attachment: fixed;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl0GR0qg2_op1qzj7QYIFaLbpLto0S-Fk3WCfqPWXgC8fLAJjIX0XikroCIs&s);
+	background-color: #ffc0cb;
+	margin: 6px;
+	color: #000000;
+}
+
+a:link { 
+	color: #000000;
+	text-decoration: none;
+} 
+
+a:visited { color: white; } 
+   
+a:active { color: #faaadd; }
+   
+a:hover {
+    text-decoration: underline overline;
+}
+
+.header {
+	width: 100%;
+	font-weight: bold;
+	border-radius: 4px;
+	background-image: url(https://sun9-63.userapi.com/c837433/v837433956/4c466/B9Pd6Le9LK0.jpg);
+	background-size: cover;
+}
+
+.card_header {
+    justify-content: space-between;
+}
+
+#logo {
+	width: 300px;
+	height: 180px;
+	float: left;
+	margin-top: 20px;
+}
+
+.topnav {
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+	height: auto;
+	background: #e6e6fa;
+	border-radius: 7px;
+	margin-bottom: 5px;
+}
+
+.button {
+	height: 100%;
+	width: calc(100% / 6);
+}
+
+.butt {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+#block_fixed {
+	width: calc(100% - 10px);
+	top: 0px;
+	position: fixed;
+}
+
+.topnav a {
+	color: #000000;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	height: 100%;
+	border-radius: 7px;
+}
+
+.topnav a:hover {
+	background-color: white;
+	color: #e6e6fa;
+}
+    
+#active {
+	background: #ffc0cb;
+	color: #000000;
+	border-radius: 4px;
+}
+
+.row {
+	width: calc(100% - 10px);
+	height: 100%;
+}
+
+.leftcolumn {
+	width: 400px;
+	float: left;
+	background-color: #ffc0cb;
+	border-radius: 7px;
+	box-shadow: inset 0 0 6px;
+	padding: 10px;
+}
+
+.TIG {
+	background-repeat: no-repeat; 
+	float: left;
+	margin: 5px;
+	position: relative;
+	width: 250px;
+	height: 250px;
+}
+
+#date {
+	color: white;
+}
+
+.rightcolumn {
+	float: right;
+	width: calc(100% - 445px);
+	height: auto;
+	background: #ffc0cb;
+	display: inline-block;
+	border-radius: 7px;
+	box-shadow: inset 0 0 6px;
+	padding: 10px;
+	margin-left:445px;
+	margin-left:-315px
+}
+
+.rightcolumn h {
+	text-align: center;
+	font-weight: bold;
+}
+
+.card {
+	display: inline-block;
+	margin-bottom: 5px;
+	background-color: #ffc0cb;
+
+}
+
+.card_noborder {
+	margin: 5px;
+}
+
+#right_info {
+	float: right;
+	width: auto;
+	margin-left: 50%;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#contact_info {
+	color: #faaadd;
+	text-align: center;
+	font-size: 14px;
+	filter: none;
+	width: 40%;
+	margin-left: 60%;
+	margin-top: 25px;
+}
+
+#row_indent {
+	margin-top: 70px;
+}
+
+.footer {
+	width: 100%;
+	font-size: 20px;
+	border-radius: 7px;
+	background: #ffc0cb;
+	box-shadow: inset 0 0 6px;
+}
+
+.foot {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.left_nothing {
+	display: inline-block;
+	width: 20%;
+}
+
+.right_nothing {
+	display: inline-block;
+	width: 20%;
+}
+
+.center_column {
+	background: #8564a1;
+	margin: -4px;
+	display: inline-block;
+	width: 60%;
+	padding: 15px;
+}
+
+
+
+#cost_green {
+	margin-left: 6%;
+	display: inline-block;
+}
+
+#cost a {
+	color: #faaadd;
+	font-weight: bold;
+}
+
+#cost h4 {
+	color: #faaadd;
+	margin: 2px;
+}
+
+
+
+.image {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 7px;
+	border-color: #8564a1;
+}
+
+.image a {
+	color: #faaadd;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.image h4 {
+	color: #faaadd;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.kategory {
+	display: flex;
+	background: #faaadd;
+	width: 300px;
+	border-radius: 4px;
+	margin-left: 50px;
+}
+
+.kategory a {
+	display: inline-block;
+	width: 220px;
+	color: white;
+	text-align: center;
+	padding: 20px 40px;
+}
+
+.kategory a:hover {
+	background-color: #ddd;
+	color: black;
+	border-radius: 4px;
+}
+
+#card_footer {
+	float: right;
+	width: auto;
+	margin-left: 20%;
+}
+
+#footer_contacts {
+	width: 20%;
+}
+
+#footer_counter {
+	float: right;
+	background-color: #FFFFFF;
+	border-radius: 7px;
+	margin-right: 5px;
+	box-shadow: inset 0 0 6px;
+}

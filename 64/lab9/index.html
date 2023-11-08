@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Lab 9</title>
+    <link rel="stylesheet" href="la.css">
+  </head>
+<body>  
+	<div>
+		<form class="form" id="window" name="graph_form">
+			<p>График функции y=ax²+bx+c</p>
+			<p>a = 
+				<input type="text" value="1" id="a_">
+			</p>
+			<p>b = 
+				<input type="text" value="0" id="b_">
+			</p>
+			<p>c = 
+				<input type="text" value="0" id="c_">
+			</p>
+			<a>В области с границами:</a>
+			<p>x от 
+				<input type="text" value="-10" id="x_min"> до
+				<input type="text" value="10" id="x_max">
+			</p>
+			<p>y от 
+				<input type="text" value="-10" id="y_min"> до
+				<input type="text" value="10" id="y_max">
+			</p>
+			<div><canvas id="canvas" height="200" width="300" ></canvas></div>
+			<input type="button" value="Нарисовать" onclick="start();" id="button">			
+		</form>
+	</div>
+	<script src="./lab9.js"></script>
+</body>
+</html>

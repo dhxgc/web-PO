@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Задание 2 Лаба 6</title>
+    <script>
+      while(1)
+      {
+        var chislo = window.prompt("Введите размер таблицы умножения");
+        if(Number.isInteger(+chislo)!=1 || chislo<=0)
+          alert("ОШИБКА");
+        else break;
+      }
+          document.write("<table>");
+          document.write("<tr><td></td>");
+          for (var i = 1; i <= chislo; i++)
+          {
+              document.write("<td class=nomer>" + i + "</td>");
+          }
+          for (i = 1; i <= chislo; i++)
+          {
+            document.write("<tr><td class=nomer>" + i + "</td>");
+            for (var k = 1; k <= chislo; k++)
+            {
+              if (i == k)
+                document.write("<td class=diag>" + i + "*" + k + "=" + i * k + "</td>");
+              else document.write("<td>" + i + "*" + k + "=" + i * k + "</td>");
+            }
+            document.write("</tr>");
+          }
+          document.write("</table>");
+    </script>
+  </head>
+  <body></body>
+</html>
+

@@ -1,0 +1,16 @@
+body {
+	background-color:#FFDFd9 ;
+}
+
+#window {
+	margin-left:450px;
+	margin-top: 10px;
+	background: #FFEFd5	;
+	width: 450px;
+	padding: 20px;
+	color: #000000;
+}
+
+#canvas{
+	background: white;
+}

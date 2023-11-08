@@ -1,0 +1,20 @@
+table,td {
+  text-align: center;
+  border: 1px solid #FF0000;
+  border-collapse: collapse;
+  background-color: #F08080;
+}
+td {
+  padding: 5px;
+}
+
+.nomer {
+  background-color: #DC143C;
+  font-weight: bold;
+}
+
+.diag {
+  background-color: #F08080;
+  border-width: 3px;
+}
+
