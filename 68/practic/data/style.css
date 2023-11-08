@@ -1,0 +1,120 @@
+body { background-color: black; color: black; }
+
+.header, .content, .menu, .footer { padding: 5px; border: solid 2px #06266F; background-color: #64DF85; }
+
+.content { text-align: center; }
+.layout { width: 100%; }
+.layout td { padding: 5px; vertical-align: top; }
+.menu { width: 33%; text-align: center; font-size: 24px; line-height: 2; }
+.header, .footer { font-size: 20px; font-weight: bold; height: 30px; text-align: center; }
+.footer { font-size: 20px; font-weight: bold; height: 30px; text-align: center; }
+
+input { border-color: black; border-width: 1px; }
+
+ul { list-style: none; }
+a { 
+	text-decoration: none; 
+}
+
+.forma{
+	border-color: black;
+}
+
+.imgsnow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+}
+.pop{  
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+/*Стили для графического калькулятора*/
+#okno	{
+	height:60px;
+	border:1px solid black;
+	text-align:left;
+	font-size: 30px;
+	border-radius: 5px;
+	background-color: white;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calc {
+	height: 650px;
+	width: 600px;
+	border: solid 2px #555;
+	border-radius: 10px;
+	background-color: grey;
+	padding: 20px;
+	margin-left: 100px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 100px;
+}
+.calc_result {
+	height: 50px;
+	grid-column: 1 / -1;
+	background-color: #000000;
+	padding: 10px;
+	color: black;
+	
+}
+.calc_bth {
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #eee;
+	font-size: 30px;
+	box-shadow: 2px 3px 3px 2px;
+	
+}
+.calc_bth:hover {
+	opacity: 0.7;
+}
+.calc_bth:active {
+	box-shadow: 1px 1px;
+}
+.calc_hidden {
+	border: none;
+	background-color: grey;
+}
+/*Стили для графического калькулятора*/
+
+/*Стили для снегопада*/
+.text {
+			font-size: 25pt;
+			width: 350px;
+			height: auto;
+			margin-right: auto;
+			margin-left: auto;
+		}
+/*Стили для снегопада*/
+
+/*Стили для таблицы 1*/
+.bordtable{
+	border: solid black 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kolonki{
+	border: solid black 1px;
+	border-collapse: collapse;
+	height: 20px;
+	width: 20px;
+}
+/*Стили для таблицы 1*/

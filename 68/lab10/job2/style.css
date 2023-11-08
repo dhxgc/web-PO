@@ -1,0 +1,29 @@
+body { background-color: lightgreen; color: black; }
+
+.header, .content, .menu, .footer { padding: 5px; border: solid 2px #76627f; background-color: lightblue; }
+
+#template { center; border: solid 1px black; border-collapse: collapse; margin: auto; }
+.etalpmet { border: solid 1px black; border-collapse: collapse; }
+
+.content { text-align: center; }
+.layout { width: 100%; }
+.layout td { padding: 5px; vertical-align: top; }
+.menu { width: 33%; text-align: center; font-size: 24px; line-height: 2; }
+.header { font-size: 20px; font-weight: bold; height: 30px; text-align: center; }
+.footer { font-size: 20px; font-weight: bold; height: 30px; text-align: center; }
+
+.massiv { display: inline-block; padding: 20px;}
+.tabmas {
+        font-size: 14px;
+        text-align: center;
+        border-spacing: 0px;
+        border-collapse: collapse;
+      }
+.tdmas { 
+        padding: 5px;
+        border: 1px solid black;
+      }
+
+.color { background-color: green; }
+
+.name { font-size: 20px; }
