@@ -1,0 +1,35 @@
+#mouse {
+	position: relative;
+	border-radius: 30px 30px 100px 100px;
+	border:4px groove black;
+	width: 180px;
+	height: 200px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#telo {
+	height: 200px;
+}
+
+#left {
+	border:4px groove black;
+	width: 60px;
+	height: 40px;
+    border-top-left-radius: 25px;
+}
+
+#center {
+	border: 2px groove black;
+	border-width: 4px;
+	width: 60px;
+	height: 40px;
+}
+
+#right {
+	border:4px groove black;
+    border-top-right-radius: 25px;
+	border-width: 4px;
+	width: 60px;
+	height: 40px;
+}

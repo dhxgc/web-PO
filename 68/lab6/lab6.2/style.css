@@ -1,0 +1,13 @@
+		table {border:1px  ridge black;
+				   border-collapse:collapse;
+				   margin-left:auto;
+				   margin-right:auto
+				  }
+			td {
+				border:1px ridge black;
+				background-color: while;
+			}
+			.sp{
+				border:1px ridge black;
+				background-color: grey;
+			}

@@ -1,0 +1,305 @@
+*{
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+	background: url(pictures/background.jpg)
+}
+
+.h1{
+	font-size: 50px;	
+}
+.mainbody{
+	width: 100%;
+	margin-bottom: 600;
+	
+}
+
+.toprow{
+	height: 80px;
+    background-image: url(pictures/logoback.jpg)
+}
+
+.logo{
+	width: 80px;
+	height: 80px;
+	float: left;
+    border-radius: 10px;
+}
+
+.contact{
+	position: absolute;
+    width:200px;
+    top:20px;
+    right:1%;
+    text-align: left;
+    color:black;
+}
+
+.mainmenu1{
+	width: 100%;
+	background-color: #CFFFE5;
+	font-size: 25px;
+}
+
+.menuformenu a{
+	padding-left: 25px;
+}
+
+.news{
+	width: 400px;
+	float: left;
+}
+
+.news2{
+	padding-left: 15px;
+	margin-top: 50px;
+	width: 300px;
+	border-radius: 10px;
+	margin-left: 50px;
+	font-size: xx-large;
+	background-color: #CFFFE5;
+}
+
+.textnews{
+	text-align: left;
+}
+
+.productannouncements{
+	margin-left: 350px;
+	padding-bottom: 20px;
+}
+
+.product{
+	width: 90%;
+	margin-top: 15px;
+	margin-left: 5%;
+	background-color: #CFFFE5;
+    border:1px solid black;
+}
+
+.header{
+	font-weight: bold;
+	font-size: 33px;
+}
+
+.Polaris{
+	float: left;
+	padding-right: 20px;
+	width: 120px;
+}
+
+.PUH7205Di{
+	padding-top: 30px;
+	padding-left: 15px;
+	text-align: left;
+	font-size: 27px;
+	padding-bottom: 5px;
+}
+
+.Vitek{
+	float: left;
+	padding-right: 20px;
+	width: 150px;
+}
+
+.VT2343{
+	padding-top: 30px;
+	padding-left: 15px;
+	text-align: left;
+	font-size: 27px;
+	padding-bottom: 5px;
+}
+
+.copyandcounter{
+	
+	height: 120px;
+	background-color: #CFFFE5;
+	position: relative;
+	width: 100%;
+}
+
+.copy{
+	text-align: left;
+    width: 200px;
+}
+
+.counter{
+	right: 0.2%;
+	text-align: right;
+    bottom: 39px;
+	width: 200px;
+	position: absolute;
+}
+
+.menyuinabout
+{
+	width: 100%;
+	position: fixed;
+	background-color: #CFFFE5;
+	font-size: 25px;
+	z-index: 1;
+}
+
+.about1{
+	position: relative;
+	top: 120px;
+	margin-bottom: 250px;
+	text-align: left;
+	font-size: 40px;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-weight: 400;
+	padding-left: 1px;
+}
+
+.about2{
+	padding-top: 30px;
+	background-color: #CFFFE5;
+	border-radius: 12px;
+}
+
+.contact2{
+    width:200px;
+    position:relative;
+    left:45%;
+}
+
+
+
+.categoryhead{
+	color: black;
+	font-size: 25px;
+	text-align: left;
+}
+
+.categoriya{
+	color: black;
+	display:inline-block;
+	text-decoration: none;
+}
+.contactandfeedbackanddevilery{
+    width: 60%;
+    top: 120px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:50px;
+    margin-bottom: 300px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    background-color: #CFFFE5;
+    border-radius: 20px;
+    position: relative;
+}
+.lidev{
+    text-align: left;
+}
+.choosecategory {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    width: 300px;
+    height: 76%;
+    bottom: 100px;
+    padding-left: 15px;
+    font-size: 25px;
+    text-align: left;
+}
+.categoryhead {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+}
+.category {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: left;
+}
+.showcatalog {
+    position: relative;
+    left: 350px;
+    top: 100px;
+    width: 70%;
+    height: auto;
+    bottom: 100px;
+    padding-left: 10px;
+    margin-bottom: 150px;
+}
+.shopitem {
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.imageitem {
+    width: auto;
+    height: 150px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.nameitem {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    margin-top: -6px;
+}
+.ptext{
+    font-size: 40px;
+}
+
+
+
+.item1{
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    top: 100px;
+    width: 70%;
+    height: auto;
+    bottom: 100px;
+    padding-left: 15px;
+    margin-bottom: 250px;
+}
+.item22{
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    top: 100px;
+    width: 70%;
+    height: auto;
+    bottom: 100px;
+    padding-left: 15px;
+    margin-bottom: 150px;
+}
+.article {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.nameleft {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 35px;
+}
+.product_description {
+    color: black;
+    text-align: left;
+    margin-right: 25px;
+    font-size: 30px;
+}
+.img {
+    width: 19%;
+    float: right;
+	margin-right: 10px;
+}

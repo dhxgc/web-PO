@@ -1,0 +1,263 @@
+html, body {
+    height: 100%;
+    background-image: url(picture/background.jpg);
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+div {
+clear: both
+}
+
+body {
+    overflow-x: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #CFFFE5;
+}
+
+.uplogo {
+    background-image: url(picture/logoback.jpg);
+    position: fixed;    
+    height: 50px;
+    width: 100%;    
+    left: 0;
+    text-align: left;
+    margin-top: -9px;
+    z-index: 2;
+    color: black;	
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.companyname {
+    color: black;
+    font-size: x-large;
+    float: left;
+    margin-top: -42px;
+    margin-left: 64px;
+    text-decoration: none;
+}
+
+.companynumber {   
+    color: black;
+    font-size: large;    
+    float: right;
+    margin-top: -42px;
+    margin-right: 32px;
+}
+
+.mainmenu1 {
+    background-color: #CFFFE5;
+    position: fixed;
+    height: 15px;
+    width: 100%;
+    left: 0;
+    margin-top: 41px;
+    text-align: center;
+    padding-bottom: 11px;
+    padding-top: 9px;
+    z-index: 3;
+}
+.mainmenu {
+    background-color: #CFFFE5;
+    position: fixed;
+    height: 15px;
+    width: 100%;
+    left: 0;
+    margin-top: -16px;
+    text-align: center;
+    padding-bottom: 11px;
+    padding-top: 9px;
+
+    z-index: 3;
+}
+
+.menu, .menu:visited {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding-left: 15px;
+}
+
+.menu:hover {
+    color: black;
+}
+
+.menu:active {
+    color: black;
+}
+
+.headers {
+	color: black;
+	height: 120px;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 25px;
+}
+
+.headersleft {
+	color: black;
+	height: 120px;
+	text-align: left;
+	vertical-align: bottom;
+	font-size: 25px;
+}
+
+
+.content {
+	width: 80%;
+}
+
+.news {
+	width: 30%;
+	padding-left: 15px;
+	padding-top: 100px;
+}
+
+.date, .maintext {
+    color: black;
+    text-align: left;	
+	text-decoration: none;
+
+}
+
+.date, .maintext {
+    padding-left: 15px;
+}
+
+a.maintext {
+    padding-left: 0px;
+}
+
+.h1, .itemname {
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+
+.h1left {
+	text-align: left;
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+
+.contentdate, .maintext {
+	color: black;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.copy {
+	color: black;
+	background-color: #CFFFE5;
+    position: static;
+    height: 100px;
+    text-align: left;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.maxheight {
+	height: 400px;
+}
+
+.copynumber {
+	text-align: center;
+	padding-right: 250px;
+}
+
+.itemname:hover {
+    color: #CFFFE5;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.itemname:active {
+    color: #CFFFE5;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.item {
+    width: auto;
+    height: 190px;
+    float: left;
+}
+
+a.news:hover, a.category:hover, .nameitem a:hover, .itemname:hover, .nameitem:hover {
+    color: #CFFFE5;
+    display: block;
+    text-decoration: none;
+}
+
+a.news:active, a.category:active, .nameitem a:active, .itemname:active, .nameitem:active {
+    color: #CFFFE5;
+    display: block;
+    text-decoration: none;
+}
+
+a.category, .nameitem {
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+a.category {
+	width: 150px;
+	margin-top: 33px;
+    margin-bottom: -39px;
+    padding-left: 15px;
+}
+
+.shopitem {
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.imageitem {
+    width: auto;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.nameitem {
+    background-color: #CFFFE5;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    margin-top: -6px;
+    display: block;
+}
+
+.displaynone {
+	display: none;
+}
+.copy {
+	color: black;
+	background-color: #CFFFE5;
+    position: static;
+    height: 100px;
+    text-align: left;
+    width: 100%;
+    margin-left: 15px;
+}
+.copynumber {
+	text-align: center;
+	padding-right: 250px;
+}

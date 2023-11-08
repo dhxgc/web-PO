@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Задание 2</title>
+		<script type="text/javascript">
+		<!--
+            
+            
+            while(1){
+                var n = window.prompt("Введите число от 1 до9");
+                if(Number.isInteger(+n)!=1 || n>9 || n<=0) alert("error")
+                else break;
+            }
+				var one =1, two=1, index=1;
+				document.write( " <table> ");
+				for(i=-1; i<n; i++) { //chapka
+					if(i>-1) {
+						document.write("<td class=sp >" + index + "</td>");
+						index++;
+						} 
+					else {
+						document.write("<td>" + "</td>");
+						}
+				}
+				document.write("</tr>");
+				index=1;
+				for(var i=0;i<n;i++){
+					document.write("<tr>");
+					for(var p=0; p<=n; p++) { //pervi ctolbik
+						if(p==0) {
+							document.write("<td class=sp>" + index + "</td>"); 
+							index++;
+							}
+						else {
+							if(one==two) {
+								document.write("<td class=sp>" + one + "*" + two + "=" + one*two + "</td>");
+							}
+							else {
+								document.write("<td>" + one + "*" + two + "=" + one*two + "</td>");
+							}
+							two++;       
+							}
+						}
+					one++;
+					two=1;
+					document.write("</tr>");
+				}
+			document.write("</table>");				
+		//-->
+	</script>
+	</head>
+<body>
+	
+</body>
+</html>
